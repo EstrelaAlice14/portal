@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Trabalho de Português - CONTO</title>
+    <!-- Aluno: João Pedro Gropo Alvares, Turma: 148-->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #b79fd8;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+       
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+            }
+        }
+
+        
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        body.leitura header,
+        body.leitura footer {
+            background-color: #b79fd8;
+        }
+        body.leitura .btn-modo {
+            background: #b79fd8;
+        }
+        body.leitura .borda-conto h2 {
+            color: #b79fd8;
+        }
+
+         nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 16px;
+            text-align: center;
+        }
+        .nav-btn {
+            padding: 10px 18px;
+            font-size: 1.2em;
+            display: inline-block;
+            background: #b79fd8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            margin: 0 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+.nav-btn:hover {
+    background: #b79fd8;
+    color: #fff;
+}
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CONTO (baseado no livro "Hibisco Roxo - Chimamanda Ngozi Adichie")</h1>
+<nav>
+    <a href="slamJP.html" class="nav-btn">Slam</a>
+    <a href="contoJP.html" class="nav-btn">Conto</a>
+    <a href="reportagemJP.html" class="nav-btn">Reportagem</a>
+</nav>
+</header>
+
+<main>
+    <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+    <div class="borda-conto">
+        <h2>Um novo Jaja</h2>
+        <p>
+    O dia amanheceu ensolarado,o que me deixou ainda mais alegre e ansioso pelo que estava por vir. Pelos próximos cinco dias, eu e Kambili ficaremos na casa da minha tia Ifeoma,sem ter que nos preocupar com o nosso pai
+ <br>
+    Um pouco antes de sairmos,eu e Kambili recebemos nossos horários, que eram quase idênticos aos nossos horários normais,com exceção de duas horas que eram para ser usadas com nossos primos. Embora isso tenha me deixado triste,eu tinha uma leve sensação de que algo ocorreria com os horários,e que nós não seguiríamos eles. 
+    <br>
+    Ao chegar em Nsukka, eu rapidamente reparei na quantia absurda de carros parados na rua, sem combustível suficiente para seguir o percurso. 
+    Quando eu cheguei na casa da tia Ifeoma, eu imediatamente reparei em como ela era pequena, comparada com a minha, e em como eu teria que dormir na sala com meu primo Obiora. Eu e ele fomos ao mercado juntos comprar refrigerantes, e no caminho eu só consegui pensar em como meu primo não só tinha liberdade, como também felicidade. 
+    <br>
+    Ao longo dos dias eu e meu primo começamos a ficar cada vez mais próximos, e eu comecei a me soltar mais e não ser tímido. Eu aprendi até mesmo a assistir televisão. O mesmo não pode ser dito sobre minha irmã, que não parecia ter mudado nada até agora.  
+    <br>
+    Alguns dias depois, nós conhecemos o padre Amadi,que era muito diferente do Benedict,mas não de uma maneira ruim. ele não parecia distante de nós, e ele também se importava muito conosco.
+    <br>
+    Por volta da segunda ou terceira visita de Amadi, eu comecei a reparar que minha irmã estava olhando para ele  de uma forma… diferente, e embora eu deveria ter falando com ela e explicado que ele era muito mais velho que ela, eu simplesmente fingi não reparar no jeito que ela via ele. Pois eu não sabia nem como ter aquela conversa com ela. 
+    <br>
+    Pouco antes de eu e Kambili termos de voltar para casa, nós recebemos a notícia que o governo havia atacado o Standard e prendido Ade Cooker. Embora esta notícia nos deixou triste, a que veio em seguida nos alegrou muito: nós ficaríamos mais tempo em Nsukka. 
+    <br>
+    No dia seguinte, Ifeoma nos contou que nosso Papa-Knugwu estava muito doente, e, depois de conseguir combustível com o padre Amado,ela foi até a casa do Papa-Knugwu e buscou ele. Embora eu e Kambili morríamos com medo do que Papa faria conosco se descobrisse, nós não fizemos nada para impedir que ele viesse. 
+    <br>
+    No fim, passar alguns dias com meu avô foi muito bom, pois até hoje eu mal havia visto ele na minha vida. Embora ele tenha chegado muito ruim a casa da minha tia,em pouco tempo ele se recuperou,graças aos remédios que minha tia dava a ele diariamente. 
+    <br>
+    Porém,toda minha felicidade acabou rapidamente, quando minha tia Ifeoma contou que Eugene soube que nós estávamos com nosso avô, e que em dois dias teríamos que voltar para casa. 
+    <br>
+    No dia seguinte nosso avô não acordou, todos nós choramos, incluindo minha irmã. Para piorar a situação, meu pai veio nos buscar de surpresa,ele mal se importou com a morte de seu próprio pai. A única coisa boa foi que, antes de irmos embora, a nossa tia nos deu uma raiz de hibisco roxo para plantarmos em nosso jardim.
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p>João Pedro Gropo Alvares (148)</p>
+</footer>
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>

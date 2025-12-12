@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Trabalho de Português - SLAM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Português - Slam</title>
     <!-- Aluna: Nicoly de Oliveira Cruz, Turma: 148-->
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,12 +24,6 @@
         main {
             padding: 20px;
             min-height: 70vh;
-        }
-
-        .audio-center {
-            display: flex;
-            justify-content: center;
-            margin: 24px 0;
         }
 
         .borda-conto {
@@ -62,7 +56,7 @@
             transition: background 0.2s;
         }
         .btn-modo:hover {
-            background: #a88ac7;
+            background: #b79fd8;
         }
 
         footer {
@@ -70,11 +64,9 @@
             color: white;
             text-align: center;
             padding: 15px;
-            font-size: 1em;
-            margin: 0;
-            border-top: none;
         }
 
+       
         @media (max-width: 600px) {
             .borda-conto {
                 padding: 16px 8px;
@@ -91,20 +83,10 @@
             .btn-modo {
                 width: 100%;
                 font-size: 1em;
-                display: block;
-            }
-            body.leitura .borda-conto {
-                font-size: 1.45em;
-                line-height: 2.3;
-                padding: 24px 6px;
-                background: #fffbe6;
-                color: #222;
-            }
-            .audio-center {
-                margin: 16px 0;
             }
         }
 
+        
         body.leitura {
             background: #f5ecd7;
             color: #222;
@@ -129,100 +111,93 @@
         }
 
         nav {
-            margin-top: 16px;
-            text-align: center;
-        }
-        .nav-btn {
-            display: inline-block;
-            background: #b79fd8;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 24px;
-            margin: 0 8px;
-            font-size: 1em;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.2s;
-        }
-        .nav-btn:hover {
-            background: #a88ac7;
-            color: #fff;
-        }
+    margin-top: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.nav-btn {
+    display: inline-block;
+    background: #b79fd8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 1.2em;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.nav-btn:hover {
+    background: #b79fd8;
+    color: #fff;
+}
+.text-center
+{
+    text-align: center;
+}
+
     </style>
 </head>
 <body>
 
 <header>
-<h1>SLAM ( sobre a Declaração Universal dos Direitos Humanos)</h1>
+    <h1>Slam (sobre a Declaração Universal dos Direitos Humanos)</h1>
 <nav>
-    <a href="slam.html" class="nav-btn">Slam</a>
-    <a href="conto.html" class="nav-btn">Conto</a>
-    <a href="reportagem.html" class="nav-btn">Reportagem</a>
+    <a href="slamJPP.html" class="nav-btn">Slam</a>
+    <a href="contoJPP.html" class="nav-btn">Conto</a>
+    <a href="reportagemJPP.html" class="nav-btn">Reportagem</a>
 </nav>
 </header>
 
 <main>
     <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
-    <div class="borda-conto">
-        <h2> Filhos da Diferença</h2>
-        <div class="audio-center">
-            <audio controls>
-                <source src="" type="audio/mpeg">
-                
-            </audio>
-       </div>
-<div>
-  <p>somos filhos de uma pessoa trabalhadora e guerreira<br>
-  E outra um pouco ausente<br>
-  Ou de duas pessoas que lutaram para estar aqui na frente<br>
-  Filhos da diferença!</p>
-</div>
+    <div class="borda-conto text-center lead">
+        <h2>Liberdade de Expressão - Art.19</h2>
+        <div class=" text-center">
+            <div class=" my-5 text-center">
+            <p>Esse poema é sobre um problema</p>
+            <p>que aflinge a sociedade há eras</p>
+            <p>No qual algumas pessoas</p>
+            <p>oprimidas de expressarem</p> 
+            <p>seus sinceros descontentamentos</p>
+            <p>aos poderosos governos</p>
+            </div>
 
-<div>
-  <p>Somos filhos da família<br>
-  Dois pais<br>
-  Duas mães<br>
-  Avós<br>
-  Ou até mesmo a tia<br>
-  Filhos da diferença!</p>
-</div>
-
-<div>
-  <p>Somos filhos do indígena,<br>
-  do preto,<br>
-  do amarelo,<br>
-  do árabe<br>
-  e do branco também<br>
-  Filhos da diferença!</p>
-</div>
-
-<div>
-  <p>Somos filhos do cristão,<br>
-  do umbandista<br>
-  e do ateu<br>
-  Crias da resistência<br>
-  Filhos da diferença!</p>
-</div>
-
-<div>
-  <p>Das mulheres trouxe o caráter<br>
-  O sangue da avó da minha avó<br>
-  Trouxe o rastro da esperança que virou pó<br>
-  O silêncio dos gritos de sofrimento<br>
-  O ninho de vermes desumanos<br>
-  Calaram cada momento<br>
-  Que para viver tanto pelejamos<br>
-  Todo o abuso<br>
-  Que nojo<br>
-  Fez-nos crer que caímos em desuso<br>
-  Nos levar a descrença</p>
-</div>
-
+            <div class=" my-5 "> 
+            <p>Enquanto outro podem,</p>
+            <p>sem equivalentes punições,</p> 
+            <p>seus fanatismo dizerem</p>
+            <p>sem as devidas repercussões</p>
+            </div>
+            <div>
+            <p>Há seculos, milhares são</p>
+            <p>coagidos de abrirem mão</p> 
+            <p>de sua liberdade de expressão,</p>
+            <p>pelos poderos a força</p>
+            <p>e pelos tais "sabios"</p> 
+            <p>por meio de manipulação</p>
+            </div>
+            <div class="my-5">
+            <p>E a quem se opoem, restou</p>
+            <p>apenas o inferno </p>
+            <p>e uma questão, quem o matou.</p> 
+            </div>
+            <div>
+            <p>e como em uma ditadura</p>
+            <p>A liberdade de expressão virou</p>
+            <p>apenas amargura </p>
+            </div>
+            </div>
+           
+        </div>
 </main>
 
+
 <footer>
-    <p>Alice Estrela  (148)</p>
+    <p></p>
 </footer>
 
 <script>
