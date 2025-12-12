@@ -1,0 +1,320 @@
+
+
+   <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Português - REPORTAGEM</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+       
+        .borda-conto b {
+            display: block;
+            text-align: center;
+            margin: 32px 0 8px 0;
+            font-size: 1.15em;
+        }
+
+        .img-reportagem {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 24px auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #b79fd8;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+            }
+        }
+
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        body.leitura header,
+        body.leitura footer {
+            background-color: #b79fd8;
+        }
+        body.leitura .btn-modo {
+            background: #b79fd8;
+        }
+        body.leitura .borda-conto h2 {
+            color: #b79fd8;
+        }
+
+     nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.nav-btn {
+    padding: 10px 18px;
+    font-size: 1.2em;
+    display: inline-block;
+    background: #b79fd8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+        .nav-btn:hover {
+            background: #a88ac7;
+            color: #fff;
+        }
+
+.img-reportagem {
+    width: 60%;
+    display: block;
+    margin: 24px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #222;
+    border: 6px double #b79fd8;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-style: italic;
+}
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    display: block;
+    margin: 24px auto;
+    border-radius: 12px;
+    border: 6px solid #b79fd8;
+}
+.titulos{
+    text-align: center;
+      color: #b79fd8;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    
+<h1>REPORTAGEM</h1>
+<nav>
+    <a href="SLAM.html" class="nav-btn">Slam</a>
+    <a href="ContoHibisco.html" class="nav-btn">Conto</a>
+    <a href="reportagem.html" class="nav-btn">Reportagem</a>
+</nav>
+</header>
+
+<main>
+    <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+<div class="borda-conto">
+    <h1 class="titulos"><p>Cinema nacional como "Hollywood": por que filmes brasileiros não chegam aos nossos olhos?</p></h1> 
+
+    <p>Por qual motivo o cinema brasileiro se tornou sinônimo de Cidade de Deus? Como Hollywood afeta nossa produção de filmes? Qual o impacto das premiações norte-americanas para filmes nacionais?</p>
+
+    <p>A produção cinematográfica brasileira atual se encontra em crise, e isto é fato; é, também, perceptível ao entrarmos nos cinemas e produções hollywoodianas estarem em massa nos cartazes.</p>
+
+    <p>Um dos grandes motivos para essa massividade é a exacerbada divulgação de produções norte-americanas, que lotam as salas de cinema e tiram o espaço daquilo que é "novo" ou "independente" — apesar de que nenhuma produção cinematográfica seja realmente independente. Por mais que tenha independência da parte produtiva, ela visa o capital; logo, não é independente.</p>
+
+    <p>De acordo com a produtora Mariza Leão: “sem a cota de telas, os filmes brasileiros estão condenados”. Esta fala, além de radical, está atrelada à informação dada pelo <i>O Globo</i>, que diz que Hollywood domina quase 90% das salas de cinema em nosso país.</p>
+
+    <h2 class="titulos"><p>Mas por que isso acontece?</p></h2>
+
+    <p>Para entendermos o problema, primeiro temos que encontrar sua origem e de onde isso vem. A resposta mais direta — e mesmo que afiada — está relacionada ao sistema ao qual pertencemos: o capitalismo. No capitalismo, existe um fator determinante para a maioria das coisas que dão certo: a construção de gosto. Esses dois fatores juntos se tornam uma bomba-relógio; ao serem relacionados, a construção do nosso gosto, influenciada pelo capitalismo, faz com que consumamos aquilo que definimos como bom ou que já recebemos um preconceito para tirarmos a nossa própria opinião — que não é nossa, é influenciada por terceiros.</p>
+
+    <p>O capitalismo exerce um sistema muito conturbado e direto: o que já está estabelecido é muito melhor para o conforto lucrativo; ou seja, aquele que lucra continua no mercado e chega às pessoas mais vezes, já aquele que não lucra é ignorado e chega menos ainda às pessoas.</p>
+
+    <p>Mas qual a ligação desse sistema com o mercado cinematográfico brasileiro? Pelo simples fato de que, ao pensarmos em cinema brasileiro, os filmes que vêm em mente são, normalmente, Cidade de Deus (2002), Ainda Estou Aqui (2024), O Auto da Compadecida (2000), Central do Brasil (1998) e Tropa de Elite (2007).</p>
+
+    <h2 class="titulos"><p>Como Hollywood influencia o nosso cinema?</p></h2>
+
+    <p>Ao falarmos dos filmes acima, é possível encontrar uma peculiaridade em cada um — ou melhor, visualizar um fator determinante para a problemática de nosso pensamento nos levar até eles: TODOS os filmes citados são venerados nos Estados Unidos. O venero não vem apenas pelo filme agradar os norte-americanos, mas principalmente por esse padrão exercido pelos mesmos tornar a obra saciável como produto. Entretanto, para se tornar um produto lucrativo no sistema capitalista, é necessário abandonar suas origens, seu viés, seu estilo e se adaptar ao máximo ao que dá certo e já está estabelecido.</p>
+
+    <h2 class="titulos"><p>O Cinema da Retomada e a crise após a crise.</p></h2>
+
+    <p>O cinema brasileiro passou por dois períodos muito interessantes: o Cinema Novo, movimento que surge em 1960 para realizar críticas sociais e trazer uma linguagem cinematográfica mais próxima da realidade brasileira; e o cinema erótico brasileiro (pornochanchada), realizado em 1970 na Boca do Lixo (SP), que serviu como resposta aos conservadores da ditadura empresarial-militar e empregou centenas, até milhares, de pessoas que, com a ditadura, não puderam produzir filmes fora do nicho ditatorial.</p>
+
+    <p>Após esses dois períodos, em 1995 se inicia um novo período após o fim da Embrafilme, em 1990, pelo governo de Fernando Collor. O Cinema da Retomada reestrutura o cinema brasileiro, trazendo mais e mais filmes, quebrando barreiras internacionalmente e investindo cada vez mais na reprodutibilidade técnica.</p>
+
+    <p>O Cinema da Retomada se encerra em 2002, ano de lançamento de Cidade de Deus, filme que estabelece um padrão no cinema brasileiro, controverso por ser de um estilo não brasileiro, mas que, por marcar a repercussão global da produção nacional, deixa o maior legado do período da Retomada — um legado que deixa feridas no nosso cinema, faz com que tenhamos blockbusters brasileiros que tomam espaços nas salas e faz com que filmes do Nordeste, por exemplo, não saiam de festivais.</p>
+    <h2 class="titulos"> Filmes que indico para conhecer o cinema brasileiro</h2>
+
+
+
+    <figure>
+        <img class="img-reportagem" src="demencia.jpg" alt="Filme Demência (1987)">
+        <figcaption>
+            <b>Demência (1987)</b><br>
+            Fonte: 
+            <a href="https://www.imdb.com/pt/title/tt0091049/" target="_blank">
+                IMDb – Demência
+            </a>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img class="img-reportagem" src="deuseodiabo.jpg" alt="Deus e o Diabo na Terra do Sol (1964)">
+        <figcaption>
+            <b>Deus e o Diabo na Terra do Sol (1964)</b><br>
+            Fonte: 
+            <a href="https://www.metropoles.com/entretenimento/cinema/deus-e-o-diabo-na-terra-do-sol-retorna-a-cannes" target="_blank">
+                Metrópoles – Reportagem
+            </a>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img class="img-reportagem" src="obandidodaluzvermelha.jpg" alt="O Bandido da Luz Vermelha (1968)">
+        <figcaption>
+            <b>O Bandido da Luz Vermelha (1968)</b><br>
+            Fonte: 
+            <a href="https://pt.wikipedia.org/wiki/O_Bandido_da_Luz_Vermelha" target="_blank">
+                Wikipédia – Informações do filme
+            </a>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img class="img-reportagem" src="ameianoitelevareisuaalma.jpg" alt="À Meia-Noite Levarei sua Alma (1964)">
+        <figcaption>
+            <b>À Meia-Noite Levarei sua Alma (1964)</b><br>
+            Fonte: 
+            <a href="https://www.cinealerta.com.br/destaques/a-meia-noite-levarei-sua-alma-o-classico-inicio-da-saga-de-ze-do-caixao/" target="_blank">
+                Cine Alerta – Matéria sobre o filme
+            </a>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img class="img-reportagem" src="adamadalotacao.jpg" alt="A Dama da Lotação (1978)">
+        <figcaption>
+            <b>A Dama da Lotação (1978)</b><br>
+            Fonte: 
+            <a href="https://pt.wikipedia.org/wiki/A_Dama_do_Lota%C3%A7%C3%A3o_(filme)" target="_blank">
+                Wikipédia – A Dama da Lotação
+            </a>
+        </figcaption>
+    </figure>
+
+    <h2 class="titulos">Indicação pessoal</h2>
+
+    <figure>
+        <img class="img-reportagem" src="greice.jpg" alt="Greice (2024)">
+        <figcaption>
+            <b>Greice (2024)</b><br>
+            Indicação pessoal do autor — “gosto mais do que <i>Ainda Estou Aqui</i>, uma pena não ter saído de Fortaleza para os grandes cinemas.”<br>
+            Fonte: 
+            <a href="https://www.imdb.com/pt/title/tt6796762/" target="_blank">
+                IMDb – Greice
+            </a>
+        </figcaption>
+    </figure>
+</div>
+</div>
+
+
+
+</main>
+
+
+
+<footer>
+    <p>Jhuan Henrique Avelino da Silveira (148), Marcelo Sobreira dos Santos (148) e Murilo Xavier Ventura Ferreira (148)
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>

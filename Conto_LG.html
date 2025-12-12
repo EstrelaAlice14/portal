@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conto-Lucas Gabriel</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+       
+        .borda-conto b {
+            display: block;
+            text-align: center;
+            margin: 32px 0 8px 0;
+            font-size: 1.15em;
+        }
+
+        .img-reportagem {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 24px auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #b79fd8;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+            }
+            .img-reportagem {
+                max-width: 98vw;
+            }
+        }
+
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        body.leitura header,
+        body.leitura footer {
+            background-color: #b79fd8;
+        }
+        body.leitura .btn-modo {
+            background: #b79fd8;
+        }
+        body.leitura .borda-conto h2 {
+            color: #b79fd8;
+        }
+        
+
+        nav {
+    margin-top: 16px;
+    text-align: center;
+}
+.nav-btn {
+    display: inline-block;
+    background: #b79fd8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    margin: 0 8px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.nav-btn:hover {
+    background: #b79fd8;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    
+<nav>
+    <a href="#conto" class="nav-btn">Conto</a>
+    <a href="slam_LG.html" class="nav-btn">Slam</a>
+    <a href="reportagem_LG.html" class="nav-btn">Reportagem</a>
+</nav>
+</header>
+
+<main>
+    <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+
+   
+    <h1 class=" text-white mt-5 p-2 mx-5 rounded-5 text-center " id="conto" style="background: #b79fd8;">Conto</h1>
+
+<div>
+     <div class="container bg-white mt-3 rounded-2 d-flex justify-content-center align-items-center flex-column p-4 content-box  fs-5" >
+        
+        <h1 class="mb-3 mt-2 text-center"> Últimos momentos</h1>
+       
+        <p class="mx-4 pt-3 border-top border-secondary-subtle"> Durante nossa passagem em nossa casa em Abba, tia Ifeoma e Mama, passavam muito tempo juntas conversando no quarto. Eu ficava ouvindo suas discussões com certa frequência, até que ouvi, por uma fresta da porta, uma conversa sobre Papa:
+        </p>
+
+        <div class="d-block my-3 border border-secondary-subtle p-3 rounded-5">
+      <p class="mx-4 "> 
+        -Nwunye m, com você suporta esse jeito agressivo do Eugene? - Disse tia Ifeoma em um tom baixo, mas exclamativo.
+       </p>
+
+      <p class="mx-4 "> 
+        - Você sabe o quão difícil ser mulher separada , com filhos e, pior ainda, sem grau superior. - Disse Mama com uma feição triste.
+      </p>
+      
+      <p class="mx-4 "> -Terá sempre um lugar para ficar e o meu apoio, mesmo com minha situação atual nunca hesitarei em te ajudar- Disse tia Ifeoma enquanto apoiava em seu ombro a cabeça de Mama.
+      </p>
+     </div>
+       
+       <p class="mx-4 "> Depois de uma longa e silenciosa pausa, Mama levanta e arruma-se para ,em poucos instantes, encontrar-se com os membros da nossa ummuna. Rapidamente corro para trás de um pilar de mármore, somente vendo a grande sombra projetada de Mama no corredor.
+      </p>
+      
+  <div class="d-block my-3 border border-secondary-subtle p-3 rounded-5"> 
+          <p class="mx-4 "> 
+            - Nwunye m, vá com as crianças para minha casa. Lá poderá descansar e relaxar pelo tempo que precisar.
+          </p>
+ </div>
+
+       <p class="mx-4 "> A porta do quarto se abre completamente e Mama apressa o passo até a escadaria. Depois de algum tempo, tia Ifeoma desliga as luzes do quarto, fecha a porta e desce a escadaria como se nunca estivesse lá.
+        </p>
+
+       <p class="mx-4 "> Corri atrás de Jaja no meio da multidão da ceia, minha cabeça acelerava com meus pensamentos sobre a conversa que havia presenciado e como poderia explicar a  situação para Jaja sem que ele fique agitado com a notícia.. No caminho, ouvi que Papa teria que se ausentar devido a problemas no trabalho e que ficaria fora por uma semana, isso me fez pensar se esse era o momento em que Mama e tia Ifeoma executariam seu plano.
+       </p> 
+
+       <p class="mx-4 ">  Durante a ceia, notei que Papa não estava interagindo e estava distante, acho que ele estava muito preocupado com as ameaças que o jornal vem recebendo. Mama e tia Ifeoma estavam  evitando qualquer tipo de contato, como se estivessem brigadas ou coisa do tipo. No fim, encontrei Jaja na cozinha comendo escondido de todos, por alguns instantes tinha até esquecido o porquê de estar atrás dele, mas logo me lembrei e desesperadamente comecei a contar:
+       </p>
+<div class="d-block my-3 border border-secondary-subtle p-3 rounded-5"> 
+       <p class="mx-4 "> -É…é..eu ou-ouvi uma conversa de Mama, ela está planejando fugir e nos levar junto- Falei tão baixo que Jaja não escutou de primeira.
+ </p>
+       <p class="mx-4 ">-Mama e tia Ifeoma planejam uma “fuga” para deixarmos Papa - Falei um pouco mais alto, mas só o suficiente para Jaja ouvir.
+  </p>
+</div>
+
+       <p class="mx-4 ">  Jaja engasgou com a comida,mas se recompôs com uma agilidade inacreditável. Ele até tentou falar e gesticular, mas estava tão fragilizado que só assentiu com a cabeça e começou a andar, sinalizando para segui-lo pelos corredores da casa. Estava ficando tonta de tanto andar, até que  achamos Mama deitada sobre a cama, chorando e murmurando:
+       </p>
+
+<div class="d-block my-3 border border-secondary-subtle p-3 rounded-5">
+       <p class="mx-4 "> - O que eu faço?! O que eu faço?! - Falava Mama enquanto puxava seus cabelos.
+    
+       </p>
+       
+       <p class="mx-4  "> Então entramos no quarto sutilmente.... </p>
+
+        <p class="mx-4 ">
+             - Ma…Ma..M-Mama, acalme-se, estamos aqui por você, não se desespere. - Dizia Jaja com a voz trêmula.
+        </p>
+</div>
+
+        
+
+        <p class="mx-4 "> Mama secava o rosto enquanto nos aproximávamos para abraçá-la, desejava que  continuássemos naquele abraço, só nós três. Então, Jaja se levantou e disse que pegaria um copo de água para Mama, mas, antes dele sair, ela disse:
+        </p>
+<div class="d-block my-3 border border-secondary-subtle p-3 rounded-5">
+        <p class="mx-4 "> - Espere, precisamos arrumar as malas, vamos para a casa de sua tia em Nsukka. - Disse Mama com sua voz trêmula.      
+        </p>
+</div>
+
+        <p class="mx-4 ">  Jaja e eu fomos delicadamente andando até nossos quartos. Durante o caminho, ouvi ele murmurar sobre o quão ruim seria a ideia de fazer isso com Papa e que ele nos procuraria sem descanso. Após ouvir os “pensamentos” de Jaja, refleti sobre  como nossas vidas seriam sem Papa e o ressentimento que teria para o resto de minha vida por abandoná-lo e as dificuldades que precisamos sem sua proteção.
+         </p>
+
+        <p class="mx-4 "> Após arrumar minhas malas, fui descansar, mas ainda estava chocada com a ideia de deixar Papa. Remexi na cama durante muito tempo, tentando não pensar nos resultados e consequências de nossas ações. Durante o resto da noite, acordei várias vezes para ir à cozinha beber um pouco de água e verificar se Mama estava bem, mas sempre me escondendo pelas paredes e por trás dos pilares.
+        </p>
+
+        <p class="mx-4 ">    No café da manhã, ouvi Kevin ligar o motor do carro e vi Papa carregar algumas caixas que pareciam  pesadas, devido a forma com que ofegava. Silenciosamente, esgueirei-me pelas paredes para observar Papa entrar no carro e Kevin dirigir para fora da propriedade. Após a saída de Papa, notei que ele havia deixado uma das caixas para trás e aberta, foi quando vi várias fotos de um homem sendo torturado de diferentes formas possíveis, seu rosto parecia muito familiar.
+        </p>
+
+        <p class="mx-4 ">  Mama e tia Ifeoma estavam nos chamando para irmos nos arrumar. Então, Jaja e eu fomos pegar nossas malas. Papa já não estava mais lá para impedir esse plano, sentirei muita falta, espero que um dia ele se desculpe pelos seus atos  para voltarmos a ser uma família.
+        </p>
+
+        <p class="mx-4 ">  Após pegarmos as malas, descemos até a entrada principal onde as duas estavam nos esperando no carro. Tia Ifeoma, que estava no volante, nos apressou para que colocassem as malas no bagageiro, entrássemos e sentássemos no banco. O carro tinha o cheiro inconfundível de tia Ifeoma, ele me deixou mais calma e aliviada.
+        </p>
+
+        <p class="mx-4 ">  Durante a viagem, todos ficaram em silêncio. Jaja até tentou puxar assunto, mas sem sucesso. Do retrovisor, vi tia Ifeoma tremendo e quase em um estado de transe. Quando percebi um grande camburão das forças armadas se aproximando da traseira em  alta velocidade. Tia Ifeoma parou o carro no acostamento da estrada e, logo em seguida, uma dúzia de homens saíram e apontaram suas armas contra nosso carro.
+        </p>
+        <p class="mx-4 "> Os próximos minutos foram de um grande horror e desespero. Um grande barulho começou e, repentinamente, terminou. Todos que um dia amei, se foram.
+        </p>
+ 
+     </div>
+</div>
+   
+
+
+</main>
+
+<footer>
+    <p>Lucas Gabriel Moraes Cabeça (148) </p>
+</footer>
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>

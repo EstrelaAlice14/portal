@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Trabalho de Português - REPORTAGEM</title>
+    <!-- Alunos: Kaio Rafael Ramos Leal de Melo e marcelo tadeu bernardo loureiro dos Santos, Turma: 148-->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+       
+        .borda-conto b {
+            display: block;
+            text-align: center;
+            margin: 32px 0 8px 0;
+            font-size: 1.15em;
+        }
+
+        .img-reportagem {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 24px auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #b79fd8;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+            }
+            .img-reportagem {
+                max-width: 98vw;
+            }
+        }
+
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        body.leitura header,
+        body.leitura footer {
+            background-color: #b79fd8;
+        }
+        body.leitura .btn-modo {
+            background: #b79fd8;
+        }
+        body.leitura .borda-conto h2 {
+            color: #b79fd8;
+        }
+
+        nav {
+    margin-top: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.nav-btn {
+        padding: 10px 18px;
+    font-size: 1.2em;
+    display: inline-block;
+    background: #b79fd8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    margin: 0 8px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.nav-btn:hover {
+    background: #b79fd8;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    
+<h1>REPORTAGEM</h1>
+<nav>
+    <a href="SlamTadeu.html" class="nav-btn">Slam</a>
+    <a href="ContoTadeu.html" class="nav-btn">Conto</a>
+    <a href="ReportagemTadeuKaio.html" class="nav-btn">Reportagem</a>
+</nav>
+</header>
+
+<main>
+   <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-primary btn-modo" onclick="alternarModoLeitura()">
+            Alternar modo claro/leitura
+        </button>
+    </div>
+
+    <div class="borda-conto p-4 p-md-5 shadow-sm">
+        
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">O homem que mudou a cultura pop: Akira Toriyama</h1>
+            <p class="lead text-muted">A trajetória do criador de mundos fantásticos.</p>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="border-bottom pb-2">1. História</h2>
+                <p>
+                    Akira Toriyama nasceu na cidade de <a href="https://pt.wikipedia.org/wiki/Kiyosu" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Kiyosu, Prefeitura de Aichi, Japão</a>. 
+                    Desde jovem desenhava animais e veículos, inspirado por filmes como <em><a href="https://pt.wikipedia.org/wiki/101_D%C3%A1lmatas" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">101 Dálmatas</a></em> e obras como <em> <a href="https://pt.wikipedia.org/wiki/Astro_Boy" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Astro Boy</a></em>.
+                </p>
+                <p>
+                    Apesar da oposição dos pais, decidiu não seguir nos estudos tradicionais e trabalhou em uma agência de publicidade por três anos.
+                    Revoltado com a rotina e por não ser uma "pessoa da manhã", demitiu-se aos 23 anos e entrou no mundo dos mangás através de um concurso amador.
+                </p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <img src="https://static.wikia.nocookie.net/dragonmaster/images/8/8f/Tracksuit_Tori-Bot_R.png/revision/latest?cb=20230103014036&path-prefix=pt-br" class="img-fluid rounded shadow" alt="Foto de Akira Toriyama ou Tori-Bot">
+                <small class="text-muted d-block mt-2">Toriyama frequentemente se representava como um robô chamado "Tori-Bot"[cite: 137].</small>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4">2. Principais Trabalhos</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/f/f9/Dr._Slump.jpg" class="card-img-top" alt="Capa de Dr. Slump">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://pt.wikipedia.org/wiki/Dr._Slump" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Dr. Slump</a> (1980-1984)</h5>
+                            <p class="card-text">
+                                Primeiro grande sucesso de Toriyama, ambientado na bizarra Vila Pinguim.
+                                A história segue o inventor Senbei Norimaki e sua criação, Arale, uma robô ingênua com superforça.
+                                A obra vendeu mais de 30 milhões de cópias no Japão.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/0/07/SonGoku.jpg" class="card-img-top" alt="Goku e amigos">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://pt.wikipedia.org/wiki/Dragon_Ball" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Dragon Ball</a> (1984-1995)</h5>
+                            <p class="card-text">
+                                Uma das séries mais vendidas de sempre, com mais de 159 milhões de cópias no Japão.
+                                Começou como uma aventura inspirada no mito do Rei Macaco e evoluiu para batalhas de artes marciais épicas.
+                                Segue a jornada de Goku em busca das Esferas do Dragão.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mt-3">Contribuição nos Games</h3>
+                <p>Toriyama também marcou a história dos videogames com seu design de personagens inconfundível:</p>
+                <ul>
+                    <li><strong><a href="https://pt.wikipedia.org/wiki/Dragon_Quest" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Dragon Quest</a>:</strong> Uma das séries de RPG mais famosas do Japão, onde Toriyama atuou como character designer.</li>
+                    <li><strong><a href="https://pt.wikipedia.org/wiki/Chrono_Trigger" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Chrono Trigger</a> (1995):</strong> Considerado um dos melhores jogos da história, com uma trama complexa sobre viagens no tempo envolvendo personagens como Crono, Marle e Magus[cite: 110, 115, 118].</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="bg-light p-4 rounded border">
+            <h2 class="mb-3">3. Vida Pessoal</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        Toriyama era conhecido por ser um recluso, evitando aparecer na mídia.
+                        Casou-se com a ex-mangaká Yoshimi Katō em 1982 e teve dois filhos, Sasuke e Kikka.
+                    </p>
+                    <p>
+                        Ele tinha uma grande paixão por carros e motos (herdada de seu pai) e adorava animais, tendo criado desde cães e gatos até pássaros e lagartos.
+                    </p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Signature_of_Akira_Toriyama.svg" class="img-fluid" alt="Assinatura de Akira Toriyama">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>Kaio Rafael Ramos Leal de Melo (148) e Marcelo Tadeu Bernardo Loureiro dos Santos (148)</p>
+</footer>
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>

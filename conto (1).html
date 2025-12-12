@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho de Português - CONTO</title>
+    <!-- Aluna: Nicoly de Oliveira Cruz, Turma: 148-->
+
+    <style>
+
+        nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        }
+
+        .nav-btn {
+        padding: 10px 18px;
+        font-size: 1.2em;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #b79fd8;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+       
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+            }
+        }
+
+        
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        body.leitura header,
+        body.leitura footer {
+            background-color: #b79fd8;
+        }
+        body.leitura .btn-modo {
+            background: #b79fd8;
+        }
+        body.leitura .borda-conto h2 {
+            color: #b79fd8;
+        }
+
+        nav {
+    margin-top: 16px;
+    text-align: center;
+}
+.nav-btn {
+    display: inline-block;
+    background: #b79fd8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    margin: 0 8px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.nav-btn:hover {
+    background: #b79fd8;
+    color: #fff;
+}
+
+
+    </style>
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<header>
+    <h1>CONTO (baseado no livro "Hibisco Roxo - Chimamanda Ngozi Adichie")</h1>
+<nav>
+    <a href="slam.html" class="nav-btn">Slam</a>
+    <a href="conto.html" class="nav-btn">Conto</a>
+    <a href="reportagem.html" class="nav-btn">Reportagem</a>
+</nav>
+</header>
+
+<main>
+    <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+    <div class="borda-conto">
+        <h2>O Mundo de Fora </h2>
+        <p>Kambili morava em uma casa enorme, cheia de coisas bonitas. Os móveis eram novos, o chão brilhava, e o jardim era bem cuidado. Havia flores por todos os lados, mas as preferidas do seu pai eram os hibiscos roxos, que ninguém mexia.</p>
+
+<p>Seu pai, Eugene, era um homem bom. Ele não gritava, não batia, não era bravo como muitos pais. Ele era calmo, sempre sorria, levava os filhos à igreja e os ajudava nos estudos. Kambili e Jaja tinham tudo: livros, brinquedos, comida boa e roupas bonitas.</p>
+
+<p>Mas mesmo com tanto amor, Eugene era superprotetor. Ele achava que o mundo lá fora era perigoso, e que seus filhos só estariam seguros dentro de casa. E então, Kambili quase não saía, não tinha amigos, não conhecia bem a vida real. Tudo era planejado, limpo, organizado. Ela vivia uma vida tranquila, mas muito fechada.</p>
+
+<p>Um dia, Eugene decidiu visitar sua irmã, a Tia Ifeoma, que morava em Nsukka com os filhos. Kambili ficou animada, mas também com medo. Não sabia o que esperar. A casa da Tia Ifeoma era pequena, simples e barulhenta. Os primos de Kambili falavam alto, discutiam e riam com liberdade. A comida era diferente, e às vezes faltava até água, mas mesmo com dificuldades todos pareciam felizes.</p>
+
+<p>No começo, Kambili estranhou. Achou tudo bagunçado, se sentiu fora do lugar. Não sabia cozinhar nem lavar roupa, e mal conversava com os primos. Ficava em silêncio, observando. Mas, com o passar dos dias, foi se soltando. Começou a ajudar nas tarefas, a rir com a família, a conversar com Obiora. Começou a gostar daquele jeito simples de viver. Sentiu que ali a verdade aparecia mais, de verdade.</p>
+
+<p>Com o tempo, percebeu que, mesmo sendo bem cuidada em casa, havia muitas coisas que não conhecia. Em Nsukka, ela aprendeu a valorizar, aos poucos, a ver beleza nas pequenas coisas. Aprendeu que não era preciso ter tudo para ser feliz. E que a liberdade também era uma forma de amor.</p>
+
+<p>Quando voltou para casa, andou pelo jardim e olhou os hibiscos roxos com carinho. Eram flores lindas, diferentes, cuidadas com carinho. Ela sempre tinha achado que eram frágeis, mas agora via que, mesmo delicadas, elas cresciam com força. Como ela.</p>
+
+<p>Kambili sentia que, depois daquela viagem, algo dentro dela tinha mudado. Ela ainda amava o pai, mas agora sabia que o mundo era maior que os muros da sua casa.</p>
+    </div>
+</main>
+
+<footer>
+    <p>Murilo Xavier Ventura Ferreira (148)</p>
+</footer>
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>

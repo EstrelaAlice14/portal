@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho de Português - REPORTAGEM</title>
+    <!-- LUIZA AYRES, Turma: 148-->
+
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #b79fd8;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+       
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+            }
+        }
+
+        
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        body.leitura header,
+        body.leitura footer {
+            background-color: #b79fd8;
+        }
+        body.leitura .btn-modo {
+            background: #b79fd8;
+        }
+        body.leitura .borda-conto h2 {
+            color: #b79fd8;
+        }
+
+        nav {
+    margin-top: 16px;
+    text-align: center;
+}
+.nav-btn {
+    display: inline-block;
+    background: #b79fd8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    margin: 0 8px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.nav-btn:hover {
+    background: #b79fd8;
+    color: #fff;
+}
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    
+<h1>REPORTAGEM (CURIOSIDADE)</h1>
+<nav>
+    <a href="slam.html" class="nav-btn">Slam</a>
+    <a href="conto.html" class="nav-btn">Conto</a>
+    <a href="reportagem.html" class="nav-btn">Reportagem</a>
+</nav>
+</header>
+
+<main>
+    <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+    <div class="borda-conto">
+        <h> ESPORTE NA MACEDÔNIA DO NORTE</h2>
+        <p>
+Hoje falaremos sobre esporte principal na Macedônia do norte, sua cultura e campeã na culturua deles. Vamos mergulhar a fundo sobre um país eslavo! <br>
+
+<b>PRINCÍPIO (Bandeira da Macedônia do Norte)</b><br>
+<img src="data:image/png;base64,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" alt="Bandeira M.N" class="img-reportagem">
+<br>
+Grécia antiga compartilhava semelhanças com os macedônicos em cultura, religião e esporte com tempo os dois se dividiram em duas partes: Macedônia do norte e sul (O sul seria atualmente a Grécia) mas o alfabeto são totalmente diferentes enquanto Grécia utiliza o grego, os macedônicos usam alfabeto cirílico ou conhecido como AZBUKA (АЗБУКА) Os principais países a falar diretamente do alfabeto cirílico são: Rússia, Ucrânia, Cazaquistão, Macedônia do Norte, Sérvia e Bielorússia.<br><br>
+
+Os macedônios sempre apreciaram o esporte ao longo de sua longa história. Como na maioria dos países europeus, o futebol é o esporte mais popular na Macedônia do Norte. Em 12 de agosto de 2009, a seleção nacional de futebol disputou uma partida amistosa com os então campeões europeus, em comemoração ao centenário do futebol na Macedônia do Norte, no estádio Philip II Arena. Goran Pandev, amplamente considerado o craque da equipe na época, marcou dois gols no primeiro tempo, dando à Macedônia uma vantagem de 2 a 0 no intervalo. Outro esporte popular na Macedônia do Norte é o handebol. A equipe feminina, Kometal Skopje, conquistou a Copa Europeia da Liga dos Campeões Feminina da EHF em 2002. Em 2008, o Campeonato Europeu Feminino de Handebol também foi realizado na Macedônia do Norte, onde a seleção nacional terminou em sétimo lugar. O basquetebol também é muito popular e a seleção nacional tornou-se filiada à FIBA ​​em 1993. Desde então, participaram em três EuroBaskets, tendo como melhor resultado o 4º lugar em 2011. Durante o verão, realiza-se a Maratona Aquática de Ohrid no Lago Ohrid, da qual participam a maioria dos melhores nadadores do país. No que diz respeito aos Jogos Olímpicos, a primeira medalha da Macedónia do Norte foi conquistada em 1956, quando Blagoja Vidinić, natural de Skopje, jogou como guarda-redes pela então Jugoslávia e levou a prata.<br><br>
+
+<b>FUNDAMENTOS E JOGADORES</b><br><br>
+Fundamentos variam de acordo com a região e cultura ou tradicional como de todos os países. <br>
+Um jogador parece ser famoso lá, é o Blagoje Vidinić que conquistou a medalha de ouro como goleiro pela seleção lugoslávia em 1960. Em 1956 a a equipe fico segundo lugar... <br>
+<img src="https://storage.fussballdaten.de/source/1/person/imago/1406371/1406371.jpeg?t=1658851069" alt="Jogador de futebol" class="img-reportagem">
+<br>
+
+População atual da Macedônia é baixo até com apenas 1,792 MILHÕES, com isso, fica claro que não há grandes eventos esportivos assim, é mais tradição geralmente jogam basquete, handebol e futebol estes são principais e números de jogadores variam conforme o interesse da participação. <br><br>
+
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p> LUIZA AYRES (148)</p>
+</footer>
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>
