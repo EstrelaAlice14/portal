@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho de Português - SLAM</title>
+    <title>Slam - Trabalho de Português RUTH</title>
+</head>
+<body>
+    <!-- Ruth dos Santos, Turma: 148-->
 
     <style>
+
+        nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 10px 18px;
+    font-size: 1.2em;
+}
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -127,24 +142,24 @@
         body.leitura .borda-conto h2 {
             color: #b79fd8;
         }
- nav {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.nav-btn {
-    padding: 10px 18px;
-    font-size: 1.2em;
-    display: inline-block;
-    background: #b79fd8;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    margin: 0 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.2s;
-}
+
+        nav {
+            margin-top: 16px;
+            text-align: center;
+        }
+        .nav-btn {
+            display: inline-block;
+            background: #b79fd8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 24px;
+            margin: 0 8px;
+            font-size: 1em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
         .nav-btn:hover {
             background: #a88ac7;
             color: #fff;
@@ -154,56 +169,53 @@
 <body>
 
 <header>
-<h1>SLAM (sobre a Declaração Universal dos Direitos Humanos)</h1>
+<h1>SLAM ( sobre o Artigo IV - Direitos Humanos - )</h1>
 <nav>
-    <a href="SLAM.html" class="nav-btn">Slam</a>
-    <a href="ContoHibisco.html" class="nav-btn">Conto</a>
-    <a href="ReportagemKpop.html" class="nav-btn">Reportagem</a>
+    <a href="slamm.html" class="nav-btn">Slam</a>
+    <a href="contoo.html" class="nav-btn">Conto</a>
+    <a href="reportagemm.html" class="nav-btn">Reportagem</a>
 </nav>
 </header>
 
 <main>
     <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
     <div class="borda-conto">
-        <h2>Será que podemos sair de casa em paz? - Art.3</h2>
-
-            <p>Será que podemos sair de casa em paz?<br>
-            A cada dia milhões de pessoas morrem nas ruas.<br>
-            Não importa cor, gênero, etnia e aparência,<br>
-            Todos nós temos o direito de viver.</p>
-
-            <p>Será que algum dia a falta de segurança nos afetará?<br>
-            Ou nos iludimos cada vez mais com o passar do tempo?<br>
-            Vivem dizendo que a humanidade está evoluindo,<br>
-            Mas eu apenas vejo a sociedade regredindo.</p>
-
-            <p>Será que é tão difícil assim melhorar?<br>
-            Merecemos um destino livre e pacífico.<br>
-            O fardo da culpa sempre nas nossas costas,<br>
-            Mas de quem é a culpa realmente?</p>
-
-            <p>Será que é a nossa obrigação proteger a população?<br>
-            Ou deveríamos ser protegidos por “falsos” candidatos?<br>
-            Dinheiro pra lá, dinheiro pra cá,<br>
-            Sempre faltando para nos ajudar.</p>
-
-            <p>Será que no futuro algo mudará?<br>
-            Ouço sim como resposta mas vejo ações contrárias.<br>
-            Penso muitas vezes no melhor,<br>
-            Porém me demonstram o pior.</p>
-
-            <p>Será que podemos acreditar em tudo?<br>
-            Isso não sou eu quem pode afirmar.<br>
-            Mesmo com tantos problemas e falhas,<br>
-            Seguimos em frente de cabeça erguida.</p>
-   
+        <h2>A luta continua - Art IV</h2>
+        <div class="audio-center">
+            <audio controls>
+                <source src="audioSlam.mp4" type="audio/mpeg">
+                
+            </audio>
         </div>
-        
+        <p>
+“A luta continua <br>
+  Afinal, ainda existe aquele trabalhador <br>
+  Trabalhando naquele lugar onde só sente dor<br>
+  Como se ele tivesse tal escolha<br>
+ Que artigo é esse que só ta na folha?”<br>
+
+<br>
+“Nada descreve a tristeza de um trabalhador<br>
+  Onde acorda 5 da manhã, pega busão<br>
+  Mas chega lá, e é só confusão<br>
+  E ai dele tentar falar com o patrão<br>
+  Ele não tem escolha<br>
+  Infelizmente, ou isso, ou sem seu prato de cada dia<br>
+  Que se bobear, nem tem todo dia” <br>
+<br>
+“Cadê aquele tal artigo 4? "Ninguém será mantido em escravidão"?<br>
+Todos mecerem sua liberdade<br>
+Pois não serão escravos do seu sistema onde não conhecem o dilema do artigo 4<br>
+Afinal, eles não são bonecos para serem usados como querem<br>
+São pessoas, pessoas como nós<br>
+Que necessitam que esse tal artigo saia do papel<br>
+Mas vá para o chão daqueles que trabalham naquele local cruel.” <br>
+        </p>
     </div>
 </main>
 
 <footer>
-    <p>Enzo Dorow Vaz dos Santos(148)</p>
+    <p>Ruth dos Santos (148)</p>
 </footer>
 
 <script>
